@@ -1,19 +1,20 @@
 <template>
   <v-app>
     
-    <v-main>
-     
-      
-      
-      <br>
     
-      <h1 class="title"><span style="font-size: 56px;">VERB TO BE</span> </h1>
 
+    <v-main>
       <br>
+      <h1 class="title"><span style="font-size: 100px;">VERB</span> </h1>
+      <h3 class="subtitle"><span style="font-size: 100px;">TO BE</span></h3>
+      <br>
+      
+   
+  
 <div class="icon">
       <router-link to="/entrada">
-  <v-btn
-   class="mx-2"
+      <v-btn
+           class="mx-2"
   color="accent"
   depressed
   elevation="24"
@@ -26,40 +27,72 @@
   tile
   x-large
   x-small
->
- <v-icon color="black">start</v-icon>
-</v-btn>
- </router-link>
+            >
+              <v-icon color="white">START</v-icon>
+            </v-btn>
+            </router-link>
             </div>
          
-           
+  
+            
     </v-main>
   </v-app>
-  
 </template>
 
 <script>
+
+
 export default {
-  name: 'Inicio',
+  name: 'inicio', 
   components: {
     
   },
-  data: () => ({
-    //
-  }),
+
+  data: () => {
+  
+    return {
+          
+    
+    };
+  }
 };
 </script>
+
 <style>
+
 #app {
-  background: url('../../models/img/background.jpg') no-repeat center center fixed !important;
-  background-size: auto;
+  background: url('../assets/Background/Fondo_inicio.jpg') no-repeat center center fixed !important;
+  background-size: cover;
   
 }
+
 .title {
-  color:  rgb(0, 0, 0);
-position: relative;
-  bottom: -350px;
-   right: -450px;
+   align-content: right;
+    align-items: right;
+     padding-top: 90px;
+    padding-left: 20%;
+    position: relative;
+  bottom: -90px;
+   right: 300px;
+   font-size: 50px;
+  width: -100px;
+  display: flex;
+  justify-content: center;
+
+  /* Fin del codigo para centrar*/
+}
+.subtitle {
+align-content: right;
+    align-items: right;
+     padding-top: 90px;
+    padding-left: 20%;
+    position: relative;
+  bottom: -90px;
+   right: 300px;
+   font-size: 50px;
+  width: -100px;
+  display: flex;
+  justify-content: center;
 }
 
 body{
@@ -69,15 +102,26 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon {
-    align-content: center;
-    align-items: center;
-    padding-left: 8%;
-     position: relative;
-     left: 80px;
-vertical-align: 40px;
-
-    
+h1 {
+  color: black;
 }
 
+h3{
+  color: black;
+}
+.icon {
+    align-content: right;
+    align-items: right;
+    padding-left: 55%;
+    position: relative;
+  bottom: 590px;
+   right: -200px;
+   font-size: 50px;
+    align-content: right;
+    align-items: right;
+     padding-top: 480px;
+    position: relative;
+    
+
+}
 </style>
